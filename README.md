@@ -84,6 +84,11 @@ colima status
 
 ## 🐳 Installing Portainer
 
+#### Create a folder to use as a volume for the Portainer
+```bash
+mkdir ./docker/projects/k8s/colima-with-docker-engine/portainer_data
+```
+
 ### Option 1: Using Docker Run
 
 ```bash
