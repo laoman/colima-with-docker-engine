@@ -103,8 +103,7 @@ docker run -d \
 Create a docker-compose.yml file:
 
 ```yaml
-// filepath: /Users/georgiosgeorgiou/docker/projects/k8s/colima-with-docker-engine/docker-compose.yml
-version: '3.8'
+// filepath: ./docker/projects/k8s/colima-with-docker-engine/docker-compose.yml
 
 services:
   portainer:
