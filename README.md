@@ -50,11 +50,6 @@ Before installing Colima, you'll need Homebrew package manager. Here's how to in
 
 Colima provides a Docker Engine environment without needing Docker Desktop. Here's how to set it up:
 
-### Prerequisites
-
-- macOS
-- Homebrew (package manager for macOS)
-
 ### Installation Steps
 
 1. **Install Colima**
