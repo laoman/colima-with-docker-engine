@@ -1,3 +1,17 @@
+- [Colima with Docker Engine Setup](#colima-with-docker-engine-setup)
+  - [🍺 Installing Homebrew](#-installing-homebrew)
+  - [🐳 Installing Docker Engine with Colima](#-installing-docker-engine-with-colima)
+    - [Prerequisites](#prerequisites)
+    - [Installation Steps](#installation-steps)
+    - [Basic Colima Commands](#basic-colima-commands)
+  - [🐳 Installing Portainer](#-installing-portainer)
+      - [Create a folder to use as a volume for the Portainer](#create-a-folder-to-use-as-a-volume-for-the-portainer)
+    - [Option 1: Using Docker Run](#option-1-using-docker-run)
+    - [Option 2: Using Docker Compose](#option-2-using-docker-compose)
+    - [Accessing Portainer](#accessing-portainer)
+    - [Troubleshooting](#troubleshooting)
+  - [Cleaning Up](#cleaning-up)
+
 # Colima with Docker Engine Setup
 
 ## 🍺 Installing Homebrew
@@ -31,8 +45,6 @@ Before installing Colima, you'll need Homebrew package manager. Here's how to in
    ```
 
 ---
-
-# Colima with Docker Engine Setup
 
 ## 🐳 Installing Docker Engine with Colima
 
