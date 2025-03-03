@@ -1,7 +1,6 @@
 - [Colima with Docker Engine Setup](#colima-with-docker-engine-setup)
   - [🍺 Installing Homebrew](#-installing-homebrew)
   - [🐳 Installing Docker Engine with Colima](#-installing-docker-engine-with-colima)
-    - [Prerequisites](#prerequisites)
     - [Installation Steps](#installation-steps)
     - [Basic Colima Commands](#basic-colima-commands)
   - [🐳 Installing Portainer](#-installing-portainer)
