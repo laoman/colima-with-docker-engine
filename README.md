@@ -1,24 +1,6 @@
-<!-- vscode-markdown-toc -->
-* 1. [🍺 Installing Homebrew](#InstallingHomebrew)
-* 2. [🐳 Installing Docker Engine with Colima](#InstallingDockerEnginewithColima)
-	* 2.1. [Prerequisites](#Prerequisites)
-	* 2.2. [Installation Steps](#InstallationSteps)
-	* 2.3. [Basic Colima Commands](#BasicColimaCommands)
-* 3. [🐳 Installing Portainer](#InstallingPortainer)
-		* 3.1. [Create a folder to use as a volume for the Portainer](#CreateafoldertouseasavolumeforthePortainer)
-	* 3.1. [Option 1: Using Docker Run](#Option1:UsingDockerRun)
-	* 3.2. [Option 2: Using Docker Compose](#Option2:UsingDockerCompose)
-	* 3.3. [Accessing Portainer](#AccessingPortainer)
-	* 3.4. [Troubleshooting](#Troubleshooting)
-* 4. [Cleaning Up](#CleaningUp)
+# Colima with Docker Engine Setup
 
-<!-- vscode-markdown-toc-config
-	numbering=true
-	autoSave=true
-	/vscode-markdown-toc-config -->
-<!-- /vscode-markdown-toc --># Colima with Docker Engine Setup
-
-##  1. <a name='InstallingHomebrew'></a>🍺 Installing Homebrew
+## 🍺 Installing Homebrew
 
 Before installing Colima, you'll need Homebrew package manager. Here's how to install it:
 
@@ -52,16 +34,16 @@ Before installing Colima, you'll need Homebrew package manager. Here's how to in
 
 # Colima with Docker Engine Setup
 
-##  2. <a name='InstallingDockerEnginewithColima'></a>🐳 Installing Docker Engine with Colima
+## 🐳 Installing Docker Engine with Colima
 
 Colima provides a Docker Engine environment without needing Docker Desktop. Here's how to set it up:
 
-###  2.1. <a name='Prerequisites'></a>Prerequisites
+### Prerequisites
 
 - macOS
 - Homebrew (package manager for macOS)
 
-###  2.2. <a name='InstallationSteps'></a>Installation Steps
+### Installation Steps
 
 1. **Install Colima**
 
@@ -82,7 +64,7 @@ Colima provides a Docker Engine environment without needing Docker Desktop. Here
    docker info
    ```
 
-###  2.3. <a name='BasicColimaCommands'></a>Basic Colima Commands
+### Basic Colima Commands
 
 ```bash
 # Start Colima
@@ -100,14 +82,14 @@ colima status
 
 ---
 
-##  3. <a name='InstallingPortainer'></a>🐳 Installing Portainer
+## 🐳 Installing Portainer
 
-####  3.1. <a name='CreateafoldertouseasavolumeforthePortainer'></a>Create a folder to use as a volume for the Portainer
+#### Create a folder to use as a volume for the Portainer
 ```bash
 mkdir ./docker/projects/k8s/colima-with-docker-engine/portainer_data
 ```
 
-###  3.1. <a name='Option1:UsingDockerRun'></a>Option 1: Using Docker Run
+### Option 1: Using Docker Run
 
 ```bash
 docker volume create portainer_data
@@ -121,7 +103,7 @@ docker run -d \
   portainer/portainer-ce:latest
 ```
 
-###  3.2. <a name='Option2:UsingDockerCompose'></a>Option 2: Using Docker Compose
+### Option 2: Using Docker Compose
 
 Create a docker-compose.yml file:
 
@@ -152,14 +134,14 @@ Start Portainer using Docker Compose:
 docker-compose up -d
 ```
 
-###  3.3. <a name='AccessingPortainer'></a>Accessing Portainer
+### Accessing Portainer
 
 - Open your browser and navigate to:
   - HTTPS: `https://localhost:9443`
   - HTTP: `http://localhost:8000`
 - Create your admin user on first login
 
-###  3.4. <a name='Troubleshooting'></a>Troubleshooting
+### Troubleshooting
 
 ```bash
 # Check Colima status
@@ -174,7 +156,7 @@ docker ps | grep portainer
 
 ---
 
-##  4. <a name='CleaningUp'></a>Cleaning Up
+## Cleaning Up
 
 To remove everything:
 
